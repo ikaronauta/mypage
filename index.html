@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-* {
-margin: 0;
-padding: 0;
-}
+    body {
+        background-color: #fef7d5;
+        font-family: "Ink Free";
+        color: #0b4462
+    }
 
-body {
-background-color: #fef7d5;
-font-family: "Ink Free";
-color: #0b4462
-} 
+    img {
+        width: 350px;
+        border-style: solid;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        box-shadow: 5px 8px 15px gray;
+    }
 
-img {
-width: 300px;
-border-style: solid;
-border-radius: 20px;
-}
+    footer {
+        background-color: #2d938e;
+        height: 90px;
+        color: #fef7d5;
+        margin-top: 5px;
+        text-align: center;
+        padding-top: 10px;
+    }
 
-p {
-font-size: 12px;
-}
+    h1 {
+        background-color: #0b4462;
+        padding: 10px;
+        text-align: center;
+        color: #abee93;
+        margin-bottom: 20px;
+        text-shadow: 0px 5px 5px #8a877a;
+        box-shadow: 0px 8px 15px gray;
+    }
 
-footer {
-background-color: #2d938e;
-height: 90px;
-margin-top: 20px;
-color: #fef7d5;
-}
+    button {
+        background-color: #0b4462;
+        color: #fef7d5;
+        padding: 8px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-h1 {
-background-color: #0b4462;
-padding: 10px;
-text-align: center;
-color: #abee93;
-}
-
-button {
-background-color: #0b4462;
-color: #fef7d5;
-padding: 10px;
-margin-top: 20px;
-}
+    h2, p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
 </style>
 
 <html lang="es">
 
 <head>
-<title>My Page</title>
+    <title>My Page</title>
 </head>
 
 <body>
 
-<h1>My Page</h1>
+    <h1>My Page</h1>
 
-<h2>Mi primera pagina web</h2>
+    <h2>Mi primera pagina web</h2>
 
-<p>Esta es la mejor pagina
-web del <b><i>mundo</i></b>.</p>
+    <p>Esta es la mejor pagina
+        web del <b><i>mundo</i></b>.</p>
 
-<img src="./teem.jpeg" alt="Main" title="Teem Berners-Lee" />
+    <img src="./teem.jpeg" alt="Main" title="Teem Berners-Lee" />
 
-<br />
+    <br />
 
-<button id="boton">
-Ingresar Nombre
-</button>
+    <button id="boton">
+        Ingresar Nombre
+    </button>
 
 </body>
 
 <footer>
-<div>Julían Andrés Ortiz Galindo</div>
-</footer> 
+    <div>Julían Andrés Ortiz Galindo</div>
+    <p>2025</p>
+</footer>
 
 
 <script>
 
-let saludo = 'Hola';
+    let saludo = 'Hola';
 
-document.getElementById('boton').addEventListener('click', function(){
-let nombre = prompt('Por favor Ingrese su nombre');
-alert(saludo + ' ' + nombre);
-});
-
+    document.getElementById('boton').addEventListener('click', function () {
+        let nombre = prompt('Por favor Ingrese su nombre');
+        alert(saludo + ' ' + nombre);
+    });
 
 
 </script>
 
 </html>
-
-
-
